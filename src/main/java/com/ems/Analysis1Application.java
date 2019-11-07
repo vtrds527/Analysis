@@ -42,7 +42,7 @@ public class Analysis1Application {
 			reader.close();
 			bw.close();
 		} catch (FileNotFoundException e) {
-			System.out.println("Can't found file");
+			System.out.println("Can't found file, idiot!");
 		} catch (IOException e) {
 		}
 	}
