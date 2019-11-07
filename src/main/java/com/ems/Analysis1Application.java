@@ -33,7 +33,6 @@ public class Analysis1Application {
 			bw.newLine();
 			while ((line = reader.readLine()) != null) {
 				String item[] = line.split(",| ");
-				String n[] = item[28].split("-|/");
 				for (int i = 0; i < item.length; i++) {
 					bw.write(item[i]);
 					bw.append(",");
