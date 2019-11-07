@@ -15,7 +15,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Analysis1Application {
 	public static void main(String[] args) {
 		SpringApplication.run(Analysis1Application.class, args);
-		
+		System.out.println("test code");
 		try {
 			InputStreamReader isr = new InputStreamReader(
 					new FileInputStream("C:\\Users\\08062\\Downloads\\file.csv"));
