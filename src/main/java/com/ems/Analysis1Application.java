@@ -18,9 +18,9 @@ public class Analysis1Application {
 		
 		try {
 			InputStreamReader isr = new InputStreamReader(
-					new FileInputStream("C:\\Users\\08062\\Downloads\\07開頭編號.csv"));
+					new FileInputStream("C:\\Users\\08062\\Downloads\\file.csv"));
 			BufferedReader reader = new BufferedReader(isr);
-			BufferedWriter bw = new BufferedWriter(new FileWriter("C:\\Users\\08062\\Desktop\\1105-07開頭.csv"));
+			BufferedWriter bw = new BufferedWriter(new FileWriter("C:\\Users\\08062\\Desktop\\export_file.csv"));
 			String line = null;
 			reader.readLine();
 			bw.write("id,meter_id,bday,lday,nday,oday,uday,hday,onoff,bat,door,signal_type,sim,gprs,"
@@ -42,6 +42,7 @@ public class Analysis1Application {
 			reader.close();
 			bw.close();
 		} catch (FileNotFoundException e) {
+			System.out.println("Cannot found file");
 		} catch (IOException e) {
 		}
 	}
